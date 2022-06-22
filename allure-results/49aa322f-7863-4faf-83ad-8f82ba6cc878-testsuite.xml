@@ -1,0 +1,113 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1655936083011' stop='1655936092183'>
+    <name>My Retirement calculation</name>
+    <title>My Retirement calculation</title>
+    <test-cases>
+        <test-case start='1655936083011' status='broken' stop='1655936092182'>
+            <name>should be able to submit form with all required fields filled in</name>
+            <title>should be able to submit form with all required fields filled in</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-102.0.5005.115'/>
+            </parameters>
+            <steps>
+                <step start='1655936083013' status='passed' stop='1655936087404'>
+                    <name>POST /session/:sessionId/url</name>
+                    <title>POST /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Request' source='96507137-07a7-43b0-9c08-2ef66ebfd3f1-attachment.json' type='application/json' size='77'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1655936087407' status='passed' stop='1655936087507'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='e85b2417-0a10-4e84-a295-a2678629031c-attachment.json' type='application/json' size='56'/>
+                        <attachment title='Response' source='8f4ee72a-9973-44bc-9e91-8183bc067d8f-attachment.json' type='application/json' size='83'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1655936087515' status='passed' stop='1655936087567'>
+                    <name>POST /session/:sessionId/element/10987733-9617-4477-a784-9f798631d7d8/clear</name>
+                    <title>POST /session/:sessionId/element/10987733-9617-4477-a784-9f798631d7d8/clear</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1655936087568' status='passed' stop='1655936087692'>
+                    <name>POST /session/:sessionId/element/10987733-9617-4477-a784-9f798631d7d8/value</name>
+                    <title>POST /session/:sessionId/element/10987733-9617-4477-a784-9f798631d7d8/value</title>
+                    <attachments>
+                        <attachment title='Request' source='339207ad-65de-481a-a1e1-bf3e125e39ae-attachment.json' type='application/json' size='18'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1655936088695' status='passed' stop='1655936088765'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='7fabd04a-c639-41e5-b587-3236b7d6d0ca-attachment.json' type='application/json' size='59'/>
+                        <attachment title='Response' source='e820e8b2-4fbb-4d8f-92da-a126668668b6-attachment.json' type='application/json' size='83'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1655936088770' status='passed' stop='1655936088813'>
+                    <name>POST /session/:sessionId/element/20946161-44b4-4e07-82de-2ff36e640491/clear</name>
+                    <title>POST /session/:sessionId/element/20946161-44b4-4e07-82de-2ff36e640491/clear</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1655936088813' status='passed' stop='1655936088862'>
+                    <name>POST /session/:sessionId/element/20946161-44b4-4e07-82de-2ff36e640491/value</name>
+                    <title>POST /session/:sessionId/element/20946161-44b4-4e07-82de-2ff36e640491/value</title>
+                    <attachments>
+                        <attachment title='Request' source='e23f92a6-4938-4361-b14d-e5af3f4923f4-attachment.json' type='application/json' size='18'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1655936089868' status='passed' stop='1655936089894'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='c35682de-6018-43ab-ab13-ff5656f31043-attachment.json' type='application/json' size='59'/>
+                        <attachment title='Response' source='a2ba2b7d-3f90-4f7c-8449-e535c236f4ef-attachment.json' type='application/json' size='83'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1655936089897' status='passed' stop='1655936089951'>
+                    <name>POST /session/:sessionId/element/0099c7c5-7e0f-49ae-8a67-4b094320b337/clear</name>
+                    <title>POST /session/:sessionId/element/0099c7c5-7e0f-49ae-8a67-4b094320b337/clear</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1655936089951' status='passed' stop='1655936090032'>
+                    <name>POST /session/:sessionId/element/0099c7c5-7e0f-49ae-8a67-4b094320b337/value</name>
+                    <title>POST /session/:sessionId/element/0099c7c5-7e0f-49ae-8a67-4b094320b337/value</title>
+                    <attachments>
+                        <attachment title='Request' source='566da739-aa7b-43eb-b86d-08e1dccb6e9e-attachment.json' type='application/json' size='22'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1655936092037' status='passed' stop='1655936092179'>
+                    <name>GET /session/:sessionId/screenshot</name>
+                    <title>GET /session/:sessionId/screenshot</title>
+                    <attachments>
+                        <attachment title='Screenshot' source='a746f001-d34f-4d0e-8ea8-dd5a2cd1a41e-attachment.png' type='image/png' size='88706'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>Cannot read properties of undefined (reading 'keys')</message>
+                <stack-trace>TypeError: Cannot read properties of undefined (reading 'keys')
+                    at RetirementCalculatorPage.calculate (C:\Sandhya\SecurianAutomation\test\pageobjects\retirement.calculator.js:66:23)
+                    at async Context.&lt;anonymous> (C:\Sandhya\SecurianAutomation\test\specs\example.e2e.js:21:9)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

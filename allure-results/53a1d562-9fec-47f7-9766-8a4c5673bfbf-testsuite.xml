@@ -1,0 +1,101 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1655896592955' stop='1655896598945'>
+    <name>My Retirement calculation</name>
+    <title>My Retirement calculation</title>
+    <test-cases>
+        <test-case start='1655896592956' status='broken' stop='1655896598945'>
+            <name>should be able to submit form with all required fields filled in</name>
+            <title>should be able to submit form with all required fields filled in</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-102.0.5005.115'/>
+            </parameters>
+            <steps>
+                <step start='1655896592958' status='passed' stop='1655896596219'>
+                    <name>POST /session/:sessionId/url</name>
+                    <title>POST /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Request' source='e413e255-85b3-43f6-8337-b1269897363c-attachment.json' type='application/json' size='77'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1655896596223' status='passed' stop='1655896596333'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='8a452e51-c8bd-4e16-9561-ddcfa5b6a175-attachment.json' type='application/json' size='56'/>
+                        <attachment title='Response' source='77d4eddd-0a13-4832-97e1-dde0ef8a1e09-attachment.json' type='application/json' size='83'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1655896596339' status='passed' stop='1655896596382'>
+                    <name>POST /session/:sessionId/element/839bbcca-60fd-4165-a976-e1c04ae4e01c/clear</name>
+                    <title>POST /session/:sessionId/element/839bbcca-60fd-4165-a976-e1c04ae4e01c/clear</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1655896596383' status='passed' stop='1655896596501'>
+                    <name>POST /session/:sessionId/element/839bbcca-60fd-4165-a976-e1c04ae4e01c/value</name>
+                    <title>POST /session/:sessionId/element/839bbcca-60fd-4165-a976-e1c04ae4e01c/value</title>
+                    <attachments>
+                        <attachment title='Request' source='3eb7842f-976d-439a-89c7-e9fa07e3e08a-attachment.json' type='application/json' size='18'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1655896597510' status='passed' stop='1655896597543'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='92cfc79e-1d5f-4bc6-9b96-4e6dc25e4167-attachment.json' type='application/json' size='59'/>
+                        <attachment title='Response' source='125d111f-3493-4849-b051-93ea2b588929-attachment.json' type='application/json' size='83'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1655896597552' status='passed' stop='1655896597617'>
+                    <name>POST /session/:sessionId/element/988ca447-58bb-4f9a-8ec9-7c9dd5819a99/clear</name>
+                    <title>POST /session/:sessionId/element/988ca447-58bb-4f9a-8ec9-7c9dd5819a99/clear</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1655896597617' status='passed' stop='1655896597723'>
+                    <name>POST /session/:sessionId/element/988ca447-58bb-4f9a-8ec9-7c9dd5819a99/value</name>
+                    <title>POST /session/:sessionId/element/988ca447-58bb-4f9a-8ec9-7c9dd5819a99/value</title>
+                    <attachments>
+                        <attachment title='Request' source='f6b5834a-1573-423b-97e9-8a337797e5dc-attachment.json' type='application/json' size='18'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1655896598735' status='passed' stop='1655896598772'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='3e5290f3-c45a-49ae-8d1a-cb2f60f50c9b-attachment.json' type='application/json' size='59'/>
+                        <attachment title='Response' source='769ba910-0cc5-4962-a161-b1e877de5fca-attachment.json' type='application/json' size='83'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1655896598779' status='passed' stop='1655896598944'>
+                    <name>GET /session/:sessionId/screenshot</name>
+                    <title>GET /session/:sessionId/screenshot</title>
+                    <attachments>
+                        <attachment title='Screenshot' source='70c83583-447f-4abb-82a0-c03c872fb5ef-attachment.png' type='image/png' size='88768'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>elem[prop] is not a function</message>
+                <stack-trace>TypeError: elem[prop] is not a function
+                    at C:\Sandhya\SecurianAutomation\node_modules\@wdio\utils\build\shim.js:253:38
+                    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+                    at async RetirementCalculatorPage.calculate (C:\Sandhya\SecurianAutomation\test\pageobjects\retirement.calculator.js:61:9)
+                    at async Context.&lt;anonymous> (C:\Sandhya\SecurianAutomation\test\specs\example.e2e.js:21:9)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

@@ -1,0 +1,45 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1655874751064' stop='1655874753553'>
+    <name>My Retirement calculation</name>
+    <title>My Retirement calculation</title>
+    <test-cases>
+        <test-case start='1655874751065' status='broken' stop='1655874753552'>
+            <name>should calculate my retirement amount</name>
+            <title>should calculate my retirement amount</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-102.0.5005.115'/>
+            </parameters>
+            <steps>
+                <step start='1655874751068' status='passed' stop='1655874753372'>
+                    <name>POST /session/:sessionId/url</name>
+                    <title>POST /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Request' source='5dee4825-c4fb-41fa-8f92-0faeb1db2464-attachment.json' type='application/json' size='77'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1655874753372' status='passed' stop='1655874753551'>
+                    <name>GET /session/:sessionId/screenshot</name>
+                    <title>GET /session/:sessionId/screenshot</title>
+                    <attachments>
+                        <attachment title='Screenshot' source='ec14f4e1-022d-4823-88f9-8e9bfcefc2d8-attachment.png' type='image/png' size='382423'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>print is not defined</message>
+                <stack-trace>ReferenceError: print is not defined
+                    at RetirementCalculatorPage.calculate (C:\Sandhya\SecurianAutomation\test\pageobjects\retirement.calculator.js:49:9)
+                    at Context.&lt;anonymous> (C:\Sandhya\SecurianAutomation\test\specs\example.e2e.js:21:40)
+                    at processTicksAndRejections (node:internal/process/task_queues:96:5)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

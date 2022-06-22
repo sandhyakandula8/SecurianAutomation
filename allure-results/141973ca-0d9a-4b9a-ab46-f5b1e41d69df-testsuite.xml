@@ -1,0 +1,68 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1655875533069' stop='1655875535689'>
+    <name>My Retirement calculation</name>
+    <title>My Retirement calculation</title>
+    <test-cases>
+        <test-case start='1655875533070' status='broken' stop='1655875535689'>
+            <name>should calculate my retirement amount</name>
+            <title>should calculate my retirement amount</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-102.0.5005.115'/>
+            </parameters>
+            <steps>
+                <step start='1655875533071' status='passed' stop='1655875535415'>
+                    <name>POST /session/:sessionId/url</name>
+                    <title>POST /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Request' source='55bdad6f-f48f-4519-b0de-2f8a19f6a24f-attachment.json' type='application/json' size='77'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1655875535416' status='passed' stop='1655875535429'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='82d9981c-1581-4bcb-afe8-3fa9a7e07b15-attachment.json' type='application/json' size='56'/>
+                        <attachment title='Response' source='4648bde0-697c-4ac6-be2a-49948ed1d0d1-attachment.json' type='application/json' size='83'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1655875535434' status='passed' stop='1655875535502'>
+                    <name>POST /session/:sessionId/element/8de367b4-5b7e-4dde-b76f-0862c7651f9c/clear</name>
+                    <title>POST /session/:sessionId/element/8de367b4-5b7e-4dde-b76f-0862c7651f9c/clear</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1655875535503' status='passed' stop='1655875535576'>
+                    <name>POST /session/:sessionId/element/8de367b4-5b7e-4dde-b76f-0862c7651f9c/value</name>
+                    <title>POST /session/:sessionId/element/8de367b4-5b7e-4dde-b76f-0862c7651f9c/value</title>
+                    <attachments>
+                        <attachment title='Request' source='b05ba5a1-532b-4aa0-94bb-ca49f0674bab-attachment.json' type='application/json' size='18'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1655875535578' status='passed' stop='1655875535688'>
+                    <name>GET /session/:sessionId/screenshot</name>
+                    <title>GET /session/:sessionId/screenshot</title>
+                    <attachments>
+                        <attachment title='Screenshot' source='47b1f605-b04f-4e0a-bc02-c504a46b2538-attachment.png' type='image/png' size='88010'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>Cannot read properties of undefined (reading 'waitUntil')</message>
+                <stack-trace>TypeError: Cannot read properties of undefined (reading 'waitUntil')
+                    at RetirementCalculatorPage.calculate (C:\Sandhya\SecurianAutomation\test\pageobjects\retirement.calculator.js:53:23)
+                    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+                    at async Context.&lt;anonymous> (C:\Sandhya\SecurianAutomation\test\specs\example.e2e.js:21:9)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

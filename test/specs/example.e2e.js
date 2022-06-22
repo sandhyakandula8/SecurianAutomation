@@ -1,0 +1,26 @@
+const LoginPage = require('../pageobjects/login.page');
+const SecurePage = require('../pageobjects/secure.page');
+const retirementCalculatorPage = require('../pageobjects/retirement.calculator');
+const resultPage = require('../pageobjects/result.page');
+
+/*describe('My Login application', () => {
+    it('should login with valid credentials', async () => {
+        await LoginPage.open();
+
+        await LoginPage.login('tomsmith', 'SuperSecretPassword!');
+        await expect(SecurePage.flashAlert).toBeExisting();
+        await expect(SecurePage.flashAlert).toHaveTextContaining(
+            'You logged into a secure area!');
+    });
+});*/
+
+describe('My Retirement calculation', () => {
+    it('should be able to submit form with all required fields filled in', async () => {
+        await retirementCalculatorPage.open();
+
+        await retirementCalculatorPage.calculate(40, 68, 100000, 75000, 500000, 10, 2);
+        //await expect(SecurePage.flashAlert).toBeExisting();
+        await expect(resultPage.presentation).toHaveTextContaining(
+            'In order to retire by 68, you might need to consider increasing your monthly savings by ');
+    });
+});

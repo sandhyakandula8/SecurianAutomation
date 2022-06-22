@@ -1,0 +1,69 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1655875863589' stop='1655875866011'>
+    <name>My Retirement calculation</name>
+    <title>My Retirement calculation</title>
+    <test-cases>
+        <test-case start='1655875863589' status='broken' stop='1655875866011'>
+            <name>should calculate my retirement amount</name>
+            <title>should calculate my retirement amount</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-102.0.5005.115'/>
+            </parameters>
+            <steps>
+                <step start='1655875863591' status='passed' stop='1655875865746'>
+                    <name>POST /session/:sessionId/url</name>
+                    <title>POST /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Request' source='9360ab0e-e4f9-4dbb-8509-a8c3556bd249-attachment.json' type='application/json' size='77'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1655875865747' status='passed' stop='1655875865760'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='debf363c-2d12-4d10-8e34-c812c940d777-attachment.json' type='application/json' size='56'/>
+                        <attachment title='Response' source='0c9e48d4-00b0-4202-93a4-207e2d42ff71-attachment.json' type='application/json' size='83'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1655875865765' status='passed' stop='1655875865822'>
+                    <name>POST /session/:sessionId/element/4a440be3-7a1d-4d00-9c66-d8eef12b65af/clear</name>
+                    <title>POST /session/:sessionId/element/4a440be3-7a1d-4d00-9c66-d8eef12b65af/clear</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1655875865823' status='passed' stop='1655875865889'>
+                    <name>POST /session/:sessionId/element/4a440be3-7a1d-4d00-9c66-d8eef12b65af/value</name>
+                    <title>POST /session/:sessionId/element/4a440be3-7a1d-4d00-9c66-d8eef12b65af/value</title>
+                    <attachments>
+                        <attachment title='Request' source='ea52fda3-c318-42a4-b66a-350ff460e31e-attachment.json' type='application/json' size='18'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1655875865891' status='passed' stop='1655875866010'>
+                    <name>GET /session/:sessionId/screenshot</name>
+                    <title>GET /session/:sessionId/screenshot</title>
+                    <attachments>
+                        <attachment title='Screenshot' source='d3111830-5050-46cf-8ec7-4b9917456aca-attachment.png' type='image/png' size='88010'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>Cannot read properties of undefined (reading 'options')</message>
+                <stack-trace>TypeError: Cannot read properties of undefined (reading 'options')
+                    at waitUntil (C:\Sandhya\SecurianAutomation\node_modules\webdriverio\build\commands\browser\waitUntil.js:48:48)
+                    at RetirementCalculatorPage.calculate (C:\Sandhya\SecurianAutomation\test\pageobjects\retirement.calculator.js:53:15)
+                    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+                    at async Context.&lt;anonymous> (C:\Sandhya\SecurianAutomation\test\specs\example.e2e.js:21:9)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
