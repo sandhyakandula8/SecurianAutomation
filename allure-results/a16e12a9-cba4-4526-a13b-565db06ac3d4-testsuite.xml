@@ -1,0 +1,30 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1656192329422' stop='1656192332100'>
+    <name>My Retirement calculation</name>
+    <title>My Retirement calculation</title>
+    <test-cases>
+        <test-case start='1656192329422' status='passed' stop='1656192332097'>
+            <name>should be able to submit form with all required fields filled in</name>
+            <title>should be able to submit form with all required fields filled in</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='Chrome-102.0.5005.115'/>
+            </parameters>
+            <steps>
+                <step start='1656192329427' status='passed' stop='1656192332094'>
+                    <name>navigateTo</name>
+                    <title>navigateTo</title>
+                    <attachments>
+                        <attachment title='Request' source='cfeb4c44-5f64-4b23-8576-87fac22f3560-attachment.json' type='application/json' size='81'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

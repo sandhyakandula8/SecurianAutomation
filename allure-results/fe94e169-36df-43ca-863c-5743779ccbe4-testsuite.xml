@@ -1,0 +1,39 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1656282555154' stop='1656282615166'>
+    <name>My Retirement calculation</name>
+    <title>My Retirement calculation</title>
+    <test-cases>
+        <test-case start='1656282555155' status='broken' stop='1656282615164'>
+            <name>should be able to submit form with all required fields filled in</name>
+            <title>should be able to submit form with all required fields filled in</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='Chrome-102.0.5005.115'/>
+            </parameters>
+            <steps>
+                <step start='1656282555159' status='broken' stop='1656282615163'>
+                    <name>navigateTo</name>
+                    <title>navigateTo</title>
+                    <attachments>
+                        <attachment title='Request' source='3a47a960-67bc-4dca-a7a9-f6d857d700ea-attachment.json' type='application/json' size='81'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>Timeout of 60000ms exceeded. The execution in the test "My Retirement calculation should be able to submit form with all required fields filled in" took too long. Try to reduce the run time or increase your timeout for test specs (https://webdriver.io/docs/timeouts). (C:\Sandhya\Projects\SecurianAutomation3\test\specs\example.e2e.js)</message>
+                <stack-trace>Error: Timeout of 60000ms exceeded. The execution in the test "My Retirement calculation should be able to submit form with all required fields filled in" took too long. Try to reduce the run time or increase your timeout for test specs (https://webdriver.io/docs/timeouts). (C:\Sandhya\Projects\SecurianAutomation3\test\specs\example.e2e.js)
+                    at createTimeoutError (C:\Sandhya\Projects\SecurianAutomation3\node_modules\mocha\lib\errors.js:498:15)
+                    at Test.Runnable._timeoutError (C:\Sandhya\Projects\SecurianAutomation3\node_modules\mocha\lib\runnable.js:431:10)
+                    at Timeout.&lt;anonymous> (C:\Sandhya\Projects\SecurianAutomation3\node_modules\mocha\lib\runnable.js:246:24)
+                    at listOnTimeout (node:internal/timers:559:17)
+                    at processTimers (node:internal/timers:502:7)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

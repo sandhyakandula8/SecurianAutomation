@@ -1,0 +1,65 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1656201165473' stop='1656201167105'>
+    <name>My Login application</name>
+    <title>My Login application</title>
+    <test-cases>
+        <test-case start='1656201165474' status='broken' stop='1656201167101'>
+            <name>should login with valid credentials</name>
+            <title>should login with valid credentials</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='Chrome-102.0.5005.115'/>
+            </parameters>
+            <steps>
+                <step start='1656201165482' status='passed' stop='1656201166553'>
+                    <name>navigateTo</name>
+                    <title>navigateTo</title>
+                    <attachments>
+                        <attachment title='Request' source='857efbf4-8922-424e-8073-f6e10135707a-attachment.json' type='application/json' size='81'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1656201166583' status='passed' stop='1656201166595'>
+                    <name>findElement</name>
+                    <title>findElement</title>
+                    <attachments>
+                        <attachment title='Request' source='64841651-a06d-4f30-98d3-21814f12f986-attachment.json' type='application/json' size='73'/>
+                        <attachment title='Response' source='3b6146c4-c4ac-4843-9794-b6d8c0ee4e11-attachment.json' type='application/json' size='57'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1656201166603' status='broken' stop='1656201167100'>
+                    <name>elementClick</name>
+                    <title>elementClick</title>
+                    <attachments>
+                        <attachment title='Request' source='01ad76cc-b1f7-40c0-8ea4-c5046a6deceb-attachment.json' type='application/json' size='31'/>
+                    </attachments>
+                    <steps>
+                        <step start='1656201166626' status='passed' stop='1656201167099'>
+                            <name>takeScreenshot</name>
+                            <title>takeScreenshot</title>
+                            <attachments>
+                                <attachment title='Screenshot' source='1ea6d336-39af-4add-bfca-175745d15955-attachment.png' type='image/png' size='722639'/>
+                            </attachments>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>Node is either not clickable or not an HTMLElement</message>
+                <stack-trace>Node is either not clickable or not an HTMLElement
+                Error: Node is either not clickable or not an HTMLElement
+                    at ElementHandle.clickablePoint (C:\Sandhya\Projects\SecurianAutomation3\node_modules\puppeteer-core\lib\cjs\puppeteer\common\JSHandle.js:423:19)
+                    at runMicrotasks (&lt;anonymous>)
+                    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+                    at async ElementHandle.click (C:\Sandhya\Projects\SecurianAutomation3\node_modules\puppeteer-core\lib\cjs\puppeteer\common\JSHandle.js:496:26)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

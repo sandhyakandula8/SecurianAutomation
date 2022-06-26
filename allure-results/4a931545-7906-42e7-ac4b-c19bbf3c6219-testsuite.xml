@@ -1,0 +1,65 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1656200456135' stop='1656200457817'>
+    <name>My Login application</name>
+    <title>My Login application</title>
+    <test-cases>
+        <test-case start='1656200456136' status='broken' stop='1656200457814'>
+            <name>should login with valid credentials</name>
+            <title>should login with valid credentials</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='Chrome-102.0.5005.115'/>
+            </parameters>
+            <steps>
+                <step start='1656200456140' status='passed' stop='1656200457207'>
+                    <name>navigateTo</name>
+                    <title>navigateTo</title>
+                    <attachments>
+                        <attachment title='Request' source='622bdde6-c73a-4494-8f26-065f27f01b8e-attachment.json' type='application/json' size='81'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1656200457239' status='broken' stop='1656200457814'>
+                    <name>findElement</name>
+                    <title>findElement</title>
+                    <attachments>
+                        <attachment title='Request' source='79c5c3c4-d9e0-4486-a65e-8f5bb83d79dc-attachment.json' type='application/json' size='67'/>
+                    </attachments>
+                    <steps>
+                        <step start='1656200457279' status='passed' stop='1656200457811'>
+                            <name>takeScreenshot</name>
+                            <title>takeScreenshot</title>
+                            <attachments>
+                                <attachment title='Screenshot' source='0617a6c5-29f3-4d6a-ab4d-546d6ca8aac5-attachment.png' type='image/png' size='722639'/>
+                            </attachments>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>Evaluation failed: DOMException: Failed to execute 'querySelector' on 'Document': '#yes-social-benefits"]' is not a valid selector.
+                    at __puppeteer_evaluation_script__:1:33</message>
+                <stack-trace>Evaluation failed: DOMException: Failed to execute 'querySelector' on 'Document': '#yes-social-benefits"]' is not a valid selector.
+                    at __puppeteer_evaluation_script__:1:33
+                Error: Evaluation failed: DOMException: Failed to execute 'querySelector' on 'Document': '#yes-social-benefits"]' is not a valid selector.
+                    at __puppeteer_evaluation_script__:1:33
+                    at ExecutionContext._evaluateInternal (C:\Sandhya\Projects\SecurianAutomation3\node_modules\puppeteer-core\lib\cjs\puppeteer\common\ExecutionContext.js:221:19)
+                    at runMicrotasks (&lt;anonymous>)
+                    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+                    at async ElementHandle.evaluateHandle (C:\Sandhya\Projects\SecurianAutomation3\node_modules\puppeteer-core\lib\cjs\puppeteer\common\JSHandle.js:125:16)
+                    at async Object.internalHandler.queryOne (C:\Sandhya\Projects\SecurianAutomation3\node_modules\puppeteer-core\lib\cjs\puppeteer\common\QueryHandler.js:24:30)
+                    at async DOMWorld.$ (C:\Sandhya\Projects\SecurianAutomation3\node_modules\puppeteer-core\lib\cjs\puppeteer\common\DOMWorld.js:101:23)
+                    at async DevToolsDriver.findElement (C:\Sandhya\Projects\SecurianAutomation3\node_modules\devtools\build\utils.js:89:15)
+                    at async Browser.wrappedCommand (C:\Sandhya\Projects\SecurianAutomation3\node_modules\devtools\build\devtoolsdriver.js:102:26)
+                    at async Browser.wrapCommandFn (C:\Sandhya\Projects\SecurianAutomation3\node_modules\@wdio\utils\build\shim.js:137:29)
+                    at async Browser.$ (C:\Sandhya\Projects\SecurianAutomation3\node_modules\webdriverio\build\commands\browser\$.js:91:17)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

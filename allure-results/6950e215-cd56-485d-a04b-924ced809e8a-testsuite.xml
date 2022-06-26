@@ -1,0 +1,75 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1656280452044' stop='1656280453471'>
+    <name>My Login application</name>
+    <title>My Login application</title>
+    <test-cases>
+        <test-case start='1656280452045' status='broken' stop='1656280453469'>
+            <name>should login with valid credentials</name>
+            <title>should login with valid credentials</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='Chrome-102.0.5005.115'/>
+            </parameters>
+            <steps>
+                <step start='1656280452050' status='passed' stop='1656280452936'>
+                    <name>navigateTo</name>
+                    <title>navigateTo</title>
+                    <attachments>
+                        <attachment title='Request' source='a78bd1e7-637b-429c-b858-d872764a2e5e-attachment.json' type='application/json' size='81'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1656280452951' status='passed' stop='1656280452965'>
+                    <name>findElement</name>
+                    <title>findElement</title>
+                    <attachments>
+                        <attachment title='Request' source='90a8fa8e-6c2c-44c3-a41e-f65259eccf10-attachment.json' type='application/json' size='77'/>
+                        <attachment title='Response' source='46fcfce0-9adb-41bc-b516-afa5608fb1e2-attachment.json' type='application/json' size='57'/>
+                    </attachments>
+                    <steps>
+                        <step start='1656280452953' status='passed' stop='1656280452958'>
+                            <name>findElement</name>
+                            <title>findElement</title>
+                            <attachments>
+                                <attachment title='Request' source='28797991-01d3-4eb4-b868-2b00fcc33cf3-attachment.json' type='application/json' size='77'/>
+                                <attachment title='Response' source='6abd6c03-5262-4aa4-b5ac-993ed67251aa-attachment.json' type='application/json' size='57'/>
+                            </attachments>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1656280452969' status='broken' stop='1656280453469'>
+                    <name>elementClick</name>
+                    <title>elementClick</title>
+                    <attachments>
+                        <attachment title='Request' source='ca90e916-f193-4a73-8b75-df4fb8e8164d-attachment.json' type='application/json' size='31'/>
+                    </attachments>
+                    <steps>
+                        <step start='1656280452999' status='passed' stop='1656280453466'>
+                            <name>takeScreenshot</name>
+                            <title>takeScreenshot</title>
+                            <attachments>
+                                <attachment title='Screenshot' source='d57ac839-3532-4785-87a3-1ac91fb54bf0-attachment.png' type='image/png' size='722639'/>
+                            </attachments>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>Node is either not clickable or not an HTMLElement</message>
+                <stack-trace>Node is either not clickable or not an HTMLElement
+                Error: Node is either not clickable or not an HTMLElement
+                    at ElementHandle.clickablePoint (C:\Sandhya\Projects\SecurianAutomation3\node_modules\puppeteer-core\lib\cjs\puppeteer\common\JSHandle.js:423:19)
+                    at runMicrotasks (&lt;anonymous>)
+                    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+                    at async ElementHandle.click (C:\Sandhya\Projects\SecurianAutomation3\node_modules\puppeteer-core\lib\cjs\puppeteer\common\JSHandle.js:496:26)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
